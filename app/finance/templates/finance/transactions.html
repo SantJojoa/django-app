@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Client List</title>
+    <title>transaction</title>
 </head>
 <body>
-    <h1>Client List</h1>
+    <h1>Transactions List</h1>
     <ul>
-        {% for client in clients %}
-            <li>{{ client.name }}</li>
+        {% for transaction in transaction %}
+            <li>{{ transaction.client }}</li>
+            <li>{{transaction.transacstion_type}} </li>
         {% endfor %}
     </ul>
 </body>
