@@ -35,6 +35,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'finance.apps.FinanceConfig',
     'academics.apps.AcademicsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -60,6 +61,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [os.path.join(BASE_DIR, 'academics','templates')],
+        'DIRS': [os.path.join(BASE_DIR, 'finance','templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
